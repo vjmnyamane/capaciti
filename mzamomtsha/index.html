@@ -5,6 +5,47 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 		<link rel="stylesheet" href="content/css/style.css"> 
 		<title>Mzamomtsha Primary School</title>
+<style>
+.q-section{
+	padding: 8px;	
+}
+.q-section .question{
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	padding: 4px;
+	margin-bottom: 4px;
+	background-color: #34495e;
+}
+
+.q-section .question:not(:last-child){
+	margin-bottom: 8px;
+}
+
+.q-section .question-text {
+	margin: 0;
+	padding: 4px;  
+}
+
+.q-section .answer{
+	color: #001f3f;
+	background-color: #f1f1f1;
+	padding: 6px;
+	display: none;
+	border-radius: 3.5px;
+}
+
+.q-section .answer p{
+	margin: 0;
+}
+
+.q-section .answer ul{
+	margin: 6px 0;
+}
+
+.q-section answer li{}
+
+</style>
 	</head>
 	<body>
 		<header class="navbar">
@@ -32,17 +73,16 @@
 		
 		
 		<main role="main">
-				<div class="main-banner">
-					<div class="content">
-						<div class="wr">
-							<h1><font face="verdana" color="white" ><i>MZAMOMTSHA <font color="limegreen">PRIMARY </font> <font color="white">SCHOOL</font> </i></font></h1>
-							<a href="#" class="btn">Apply for 2020</a>
-						</div>		
+			<div class="main-banner">
+				<div class="content">
+					<div class="wr">
+						<h1><font face="verdana" color="white" ><i>MZAMOMTSHA <font color="limegreen">PRIMARY </font> <font color="white">SCHOOL</font> </i></font></h1>
+						<a href="#" class="btn">Apply for 2020</a>
 					</div>		
-				</div>
+				</div>		
+			</div>
 			<div class="flexContainer flexColumn fullHeight whiteBackground fbody" id="history-section">
 				<div class="flex-container wrapper">
-
 					<!-- Content -->
 					<section class="content">
 						<h1 class="name">Our <strong>His</strong>tory</h1>
@@ -127,8 +167,80 @@
 					<img src="content/images/school.jpg">  
 				</div>
 			</div>
+				
+		<div class="q-section">
+			<h1>Frequently Asked Questions</h1>
+			<div class="question">
+				<p class="question-text">WHERE CAN I BUY BRANDED SCHOOL UNIFORM?</p>
+				<div class="answer">
+					<p>You can buy school uniform from the school. Please visit the school for information on uniform and prices.</p>
+				</div>
+			</div>
+			
+			
+			<div class="question">
+				<p class="question-text">WHAT DO I DO IF MY CHILD IS PERSCRIBED MEDICATION?</p>
+				<div class="answer">
+					<p>If your child is perscribed medication and needs to have it at school,you must complete a form at the school office.</p>
+					<p>All medication held on school premises is kept locked and secure.</p>
+				</div>
+			</div>
+			
+			<div class="question">
+				<p class="question-text">WHAT HAPPENS IF MY CHILD HAS AN ACCIDENT AT SCHOOL?</p>
+				<div class="answer">
+					<p>All Teaching Assistants are first aid trained and can offer reassurance and first aid to pupils who are injured.</p>
+					<p>If injury is significant we would inform parents and appropriate first aid would be given and of course any serious injuries occurance would resort to immediate medical service  involvement.</p>
+				</div>
+			</div>
+			
+				<div class="question">
+					<p class="question-text">IS THERE TRANSPORTATION PROVIDED BY THE SCHOOL OR LEARNERS ARE REQUIRED TO USE THEIR OWN?</p>
+					<div class="answer">
+						<p>Sorry,the school does not provide  transportation as yet but we are working towards buying a bus or taxis for learners in far distances.</p>
+					</div>
+				</div>
+			
+				<div class="question">
+					<p class="question-text">WHAT DO I DO IF I NEED TO SEE A TEACHER?</p>
+					<div class="answer">
+						<p>Staff can be contacted via phone calls,e-mails or smses. Credentials will be provided according to your child's classes.</p>
+						<p>An appointment can be made via  the school office.</p>
+					</div>
+				</div>
+			
+				<div class="question">
+					<p class="question-text">HOW WILL MY CHILD BE ABLE TO CONTRIBUTE THEIR VIEWS?</p>
+					<div class="answer">
+						<p>We have a number of ways that children's views can be heard and listened to, including:</p>
+						<ul>
+							<li>School Counsil</li>
+							<li>Pupil Voice Interview</li>
+							<li>Class Counsil Meeting etc.</li>
+						</ul>
+						<p>Conform to the school for more information.</p>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="flexContainer flexCenter blueBackground whiteText height50">&copy; Mzamomtsha Primary School</footer>
 		<script type="text/javascript" src="content/js/main.js"></script>
+
+<script>
+var coll = document.getElementsByClassName("question-text");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    //this.classList.toggle("active");
+    var answer = this.nextElementSibling;
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+    } else {
+      answer.style.display = "block";
+    }
+  });
+}
+</script>
 	</body>
 </html>
