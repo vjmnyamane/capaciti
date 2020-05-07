@@ -21,17 +21,24 @@ a:hover{
 }
 
 header.navbar{
-	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 8px 0;
 	background-color: #34495e;
+	z-index: 99;
 }
 
 header.navbar > *:not(:last-child){
 	margin-bottom: 8px;
+}
+
+main{
+	margin-top: 90px;
 }
 
 .menu-toggler{
@@ -167,20 +174,9 @@ header.navbar > *:not(:last-child){
 	background-color: #001f3f;
 }
 /*Vuiswa*/
-.overlay{
-	width:100%;
-	height:100%;
-	background-color: rgba (black, 0.5);
-	top: 0;
-	left:0;
-	right: 0;
-	bottom: 0;
-	z-index: 2;
 
-    
-}
 .main-banner{
-	
+	z-index: 2;
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -213,8 +209,9 @@ header.navbar > *:not(:last-child){
 	width: 100%;
 	height: 100%;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	text-align: center;
 }
 
 .main-banner .btn {
@@ -225,6 +222,7 @@ header.navbar > *:not(:last-child){
 	font-size: inherit;
 	font-weight: 500;
 	padding: 14px 20px;
+	position: relative;
 	transition: transform 0.1s ease-in;
 }
 
@@ -234,6 +232,8 @@ header.navbar > *:not(:last-child){
 
 @media only screen and (min-width: 768px){
 	header.navbar{
+		position: fixed;
+		z-index: 99;
 		flex-direction: row;
 		align-items: start;
 		justify-content: space-between;
@@ -242,6 +242,10 @@ header.navbar > *:not(:last-child){
 	
 	header.navbar > *:not(:last-child){
 		margin-bottom: 0;
+	}
+	
+	main{
+		margin-top: 40px;
 	}
 	
 	.menu-toggler{
@@ -282,6 +286,10 @@ header.navbar > *:not(:last-child){
 		display: inline-block;
 	}
 	
+	.main-banner .content > .wr{
+		padding-top: 128px;
+		align-items: center;
+	}	
 	
 }
 
