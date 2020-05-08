@@ -20,6 +20,10 @@ a:hover{
 	text-decoration: underline;
 }
 
+/*
+ * Landing Page by Sakhile Mpungose
+ */
+
 header.navbar{
 	position: fixed;
 	top: 0;
@@ -185,11 +189,7 @@ main{
 	background-size: 100% auto;
 	background-position: center center;
 	background-color: black;
-	overflow: hidden;
-    
-	
-	
-	
+	overflow: hidden;	
 }
 
 .main-banner:after{
@@ -550,20 +550,23 @@ transform: scale(1.5);
 	background-repeat:no-repeat;
 	background-position: center;
 }
-
+/*
+ * FQA by Sakhile Mpungose
+ */
 .q-section{
-	display: flex;
-	flex-direction: column;
+	display: flex; // make container a flex container
+	flex-direction: column; // make container items stack up vertically
 	align-items: center;
 	padding: 8px;
 	margin-bottom: 16px;
 	background-color: #f8f9fa;
 	min-height: 100vh;
 }
+
 .q-section .question{
 	color: #FFF;
-	display: flex;
-	flex-direction: column;
+	display: flex; // make question container a flex container
+	flex-direction: column; // make container items stack up vertically
 	width: 100%;
 	padding: 4px;
 	margin-bottom: 4px;
