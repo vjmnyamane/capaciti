@@ -20,17 +20,13 @@ a:hover{
 	text-decoration: underline;
 }
 
-/*
- * Landing Page by Sakhile Mpungose
- */
-
 header.navbar{
-	position: fixed; // Make navbar stay at the top
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	display: flex; // Make navbar a flex container
-	flex-direction: column; // Make container items stack up vertically 
+	display: flex;
+	flex-direction: column;
 	align-items: center;
 	padding: 8px 0;
 	background-color: #34495e;
@@ -46,8 +42,8 @@ main{
 }
 
 .menu-toggler{
-	display: flex; // make menu toggler a flex container
-	flex-direction: column; // make container items stack up vertically
+	display: flex;
+	flex-direction: column;
 	justify-content: space-around;
 	width: 32px;
 	height: 32px;
@@ -177,10 +173,7 @@ main{
 .dropdown-menu-item-active .dropdown-menu-link{
 	background-color: #001f3f;
 }
-
-/*
- * Main Banner by Sakhile Mpungose
- */
+/*Vuiswa*/
 
 .main-banner{
 	z-index: 2;
@@ -192,7 +185,11 @@ main{
 	background-size: 100% auto;
 	background-position: center center;
 	background-color: black;
-	overflow: hidden;	
+	overflow: hidden;
+    
+	
+	
+	
 }
 
 .main-banner:after{
@@ -553,23 +550,20 @@ transform: scale(1.5);
 	background-repeat:no-repeat;
 	background-position: center;
 }
-/*
- * FQA by Sakhile Mpungose
- */
+
 .q-section{
-	display: flex; // make container a flex container
-	flex-direction: column; // make container items stack up vertically
+	display: flex;
+	flex-direction: column;
 	align-items: center;
 	padding: 8px;
 	margin-bottom: 16px;
 	background-color: #f8f9fa;
 	min-height: 100vh;
 }
-
 .q-section .question{
 	color: #FFF;
-	display: flex; // make question container a flex container
-	flex-direction: column; // make container items stack up vertically
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 	padding: 4px;
 	margin-bottom: 4px;
