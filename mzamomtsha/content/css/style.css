@@ -25,12 +25,12 @@ a:hover{
  */
 
 header.navbar{
-	position: fixed;
+	position: fixed; // Make navbar stay at the top
 	top: 0;
 	left: 0;
 	width: 100%;
-	display: flex;
-	flex-direction: column;
+	display: flex; // Make navbar a flex container
+	flex-direction: column; // Make container items stack up vertically 
 	align-items: center;
 	padding: 8px 0;
 	background-color: #34495e;
@@ -46,8 +46,8 @@ main{
 }
 
 .menu-toggler{
-	display: flex;
-	flex-direction: column;
+	display: flex; // make menu toggler a flex container
+	flex-direction: column; // make container items stack up vertically
 	justify-content: space-around;
 	width: 32px;
 	height: 32px;
@@ -177,7 +177,10 @@ main{
 .dropdown-menu-item-active .dropdown-menu-link{
 	background-color: #001f3f;
 }
-/*Vuiswa*/
+
+/*
+ * Main Banner by Sakhile Mpungose
+ */
 
 .main-banner{
 	z-index: 2;
