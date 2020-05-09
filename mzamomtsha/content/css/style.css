@@ -573,7 +573,6 @@ figcaption{
 	flex-direction: column;
 	align-items: center;
 	padding: 8px;
-	margin-bottom: 16px;
 	background-color: #f8f9fa;
 	min-height: 100vh;
 }
@@ -628,7 +627,7 @@ figcaption{
 	align-items: center;
 	background-color: #001f3f;
 	padding: 4px;
-	text-align: left;
+	text-align: center;
 	padding-bottom: 16px;
 }
 
