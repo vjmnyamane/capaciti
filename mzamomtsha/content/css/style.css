@@ -512,6 +512,15 @@ transform: scale(1.5);
   border-radius:20px;
 }
 
+.next {
+  background: linear-gradient(0deg, rgba(0,43,66,1) 0%, rgba(0,14,74,1) 40%, rgba(63,27,181,1) 90%);
+  color: white;
+}
+
+.round {
+  border-radius: 5%;
+}
+
 .teachers_section {
 	
 background:linear-gradient(90deg, rgba(13,0,36,1) 0%, rgba(134,9,158,1) 0%, rgba(29,55,148,1) 0%, rgba(0,82,124,1) 63%, rgba(0,177,213,1) 100%);
