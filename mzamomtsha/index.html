@@ -5,6 +5,47 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 		<link rel="stylesheet" href="content/css/style.css"> 
 		<title>Mzamomtsha Primary School</title>
+<style>
+.q-section{
+	padding: 8px;	
+}
+.q-section .question{
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	padding: 4px;
+	margin-bottom: 4px;
+	background-color: #34495e;
+}
+
+.q-section .question:not(:last-child){
+	margin-bottom: 8px;
+}
+
+.q-section .question-text {
+	margin: 0;
+	padding: 4px;  
+}
+
+.q-section .answer{
+	color: #001f3f;
+	background-color: #f1f1f1;
+	padding: 6px;
+	display: none;
+	border-radius: 3.5px;
+}
+
+.q-section .answer p{
+	margin: 0;
+}
+
+.q-section .answer ul{
+	margin: 6px 0;
+}
+
+.q-section answer li{}
+
+</style>
 	</head>
 	<body>
 		<header class="navbar">
@@ -15,11 +56,11 @@
 			</div>
 			<a href="#" class="header-brand">Mzamomtsha Primary</a>
 			
-			<div class="flex-menu shown">
-				<a class="flex-menu-item active" href="#">Home</a>
-				<a class="flex-menu-item" href="#history-section">History</a>				
+			<div class="flex-menu">
+				<a class="flex-menu-item active" href="#main-banner">Home</a>
+				<a class="flex-menu-item" href="#history-section">About Us</a>				
 				<a class="flex-menu-item" href="#staff-section">Staff</a>				
-				<a class="flex-menu-item" href="#gallery-section">Gallery</a>
+				<a class="flex-menu-item" href="#gallery-section">Events</a>
 				<div class="flex-menu-dropdown">
 					<a class="dropdown-menu-link" href="#">Apply</a>
 					<div class="dropdown-menu">
@@ -27,35 +68,31 @@
 						<a class="dropdown-menu-item" href="#">Vacancies</a>
 					</div>
 				</div>
+				<a class="flex-menu-item" href="#faq">FAQ</a>
 			</div>
 		</header>
 		
 		
 		<main role="main">
-		<div class="overlay">
-			<div class="main-banner">
+			<div class="main-banner section-marker" id="main-banner">
 				<div class="content">
-				<div class="school-name">
-				<h1><font face="verdana" color="white" ><i>MZAMOMTSHA <font color="limegreen">PRIMARY </font> <font color="white">SCHOOL</font> </i></font></h1>
-				</div>
 					<div class="wr">
+						<h1><font face="verdana" color="white" ><i>MZAMOMTSHA <font color="limegreen">PRIMARY </font> <font color="white">SCHOOL</font> </i></font></h1>
 						<a href="#" class="btn">Apply for 2020</a>
 					</div>		
 				</div>		
 			</div>
-		</div>
-			<div class="flexContainer flexColumn fullHeight whiteBackground fbody" id="history-section">
+			<div class="flexContainer flexColumn fullHeight whiteBackground fbody section-marker" id="history-section">
 				<div class="flex-container wrapper">
-
 					<!-- Content -->
 					<section class="content">
-						<h1 class="name">Our <strong>His</strong>tory</h1>
+						<h1 class="name">About Us</h1>
 						
 						<h6 class="lead"> Our school was initially created for primary school students from grade 1 to grade 7, but due to the rapid population growth (births and migration) the school is also enrolling higher grades. Students are allowed up to grade 12 - which is the metric year.
 						The rapid growth has lead to a series of problems for the Mzamomtsha Primary School. There are not enough classrooms to begin with and Mzamomtsha Primary School has no online presence. Besides, they can not find sufficient staff members to match the continuous growth. The school has 700 learners and a staff of 20 teachers.</h6>
 						</h6>
 							<img src="content/images/school1.jpg" width="100%" height="300">
-
+							<h1 class="name">Our vision</h1>
 							<h6 class="lead">
 								Our vision at Mzamomtsha Primary School is to empower students to acquire, demonstrate, articulate and value knowledge and skills that will support them, as life-long learners, to participate in and contribute to the global world and practice the core values of the school: respect, tolerance & inclusion, and excellence.
 								Our mission is to develop students with active and creative minds, a sense of understanding and compassion for others, and the courage to act on their beliefs. We stress the total development of each child: spiritual, moral, intellectual, social, emotional, and physical.
@@ -87,7 +124,7 @@
 			</div>
 			<hr>
 			<div class="gradient">
-			<div class="staff-section flex-container fbody" id="staff-section"  >
+			<div class="staff-section flex-container fbody section-marker" id="staff-section"  >
 			
 				<h1 class="name">Our Staff</h1>
 				
@@ -103,7 +140,8 @@
 				<b><p>MR Justice Mthimkhulu</p></b>
 				</div>
 				
-				<div class="hover"><img src="content/images/staff.jpg" width="250" height="150"> <b><p>TEACHERS</p></b>
+				<div class="hover"><img src="content/images/staff.jpg" width="250" height="150"> <b><p>TEACHERS</p>
+				<p><i> <a href="teacher.html" class="next round">View More</a></i></b></p>
 				</div>
 				
 				<div class="hover"><img src="content/images/reception.webp" width="250" height="150"> <b><p>RECEPTIONIST</p></b>
@@ -117,84 +155,134 @@
 			
 			<hr>
 			
-			<div class="event-container" id="event-section">
-                <div id="space"></div> 
-                
-				<h1 class="center-text"> Events Page</h1>
+			<div class="gallery-container section-marker" id="gallery-section">
+				<h1 id="shadow-text"> Events Page</h1>
 				<div id="logo-id"></div>
-                
-                <div class="events">
-                    <h2 class="shadow-text">Upcoming Events</h2>
+				<div class="gallery">
+                    <figure class="event-image">
+					   <img src="content/images/school1.jpg">
+                        <figcaption>Generous Donation allows the school to upgrade computer lab equipment...</figcaption>
+                    </figure>
                     
-                    <div class="upcoming-events">
-                    <div></div>
-                    <figcaption>
-                            <h3>Upcoming Matric Ball</h3>
-                            <p>Date:26 August 2020</p>
-                            <p>Time: 17H00</p>
-                            
-                            <p>Location:</p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6615.266442356868!2d18.659814526519767!3d-34.0019535901081!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x67a6a93df747dbac!2sMzamomtsha%20Primary!5e0!3m2!1sen!2sza!4v1589198583899!5m2!1sen!2sza" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </figcaption>
-                        
-                        
-                    </div>
-               
-                     <h2 class="shadow-text">Recent Events</h2>
-
-                    <div  class="recent-events">
-                        <figure class="event-image">
-                            <img src="content/images/school1.jpg">
-                            <figcaption>
-                                <h3>Generous Donation allows the school to upgrade computer lab.</h3>
-                                <p>Date:26 February 2020</p>
-                            
-                                <p>Time:10H00</p>
-                                <p>Venue: School Hall</p>
-                            </figcaption>
-                        </figure>
+                    <figure class="event-image">
+					   <img  src="content/images/school.jpg">
+                        <figcaption>Annual Prize Giving...</figcaption>
+                     </figure>
                     
-                        <figure class="event-image">
-					       <img  src="content/images/school.jpg">
-                            <figcaption>
-                                <h3>Annual Prize Giving</h3>
-                                <p>Date:2 February 2020</p>
-                                
-                                <p>Time:12H00-14H00</p>
-                                <p>Venue: School Hall</p>
-                            </figcaption>
-                        </figure>
+                    <figure class="event-image">
+					   <img src="content/images/grounds.jpg">  
+                        <figcaption>Feeding Scheme a success for the first term...</figcaption>
+                    </figure>
                     
-                        <figure class="event-image">
-					       <img src="content/images/grounds.jpg">  
-                            <figcaption>
-                                <h3>Feeding Scheme partnership with local bakery starts.</h3>
-                                <p>Date: 23 January 2020</p>
-                            
-                                <p>Time:10H00-11H00 Every Day</p>
-                                <p>Venue: School Hall</p>
-                            </figcaption>
-                        </figure>
-                    
-                        <figure class="event-image">
-					       <img src="content/images/grounds2.jpg">
-                            <figcaption>
-                                <h3>School Grounds Upgraded</h3>
-                                <p>Date: 19 December 2019</p>
-                            
+                    <figure class="event-image">
+					   <img src="content/images/grounds2.jpg">
+                        <figcaption>School Grounds upgraded...</figcaption>
+                    </figure>
                         
-                          </figcaption>
-                        </figure>
-                        
-                    </div>
-                
-                
-                </div>
-                
 					 
-            </div>
+				</div>
+			</div>
+				
+		<div class="q-section section-marker" id="faq">
+			<h1>Frequently Asked Questions</h1>
+			<div class="question">
+				<p class="question-text">WHERE CAN I BUY BRANDED SCHOOL UNIFORM?</p>
+				<div class="answer">
+					<p>You can buy school uniform from the school. Please visit the school for information on uniform and prices.</p>
+				</div>
+			</div>
+			
+			
+			<div class="question">
+				<p class="question-text">WHAT DO I DO IF MY CHILD IS PERSCRIBED MEDICATION?</p>
+				<div class="answer">
+					<p>If your child is perscribed medication and needs to have it at school,you must complete a form at the school office.</p>
+					<p>All medication held on school premises is kept locked and secure.</p>
+				</div>
+			</div>
+			
+			<div class="question">
+				<p class="question-text">WHAT HAPPENS IF MY CHILD HAS AN ACCIDENT AT SCHOOL?</p>
+				<div class="answer">
+					<p>All Teaching Assistants are first aid trained and can offer reassurance and first aid to pupils who are injured.</p>
+					<p>If injury is significant we would inform parents and appropriate first aid would be given and of course any serious injuries occurance would resort to immediate medical service  involvement.</p>
+				</div>
+			</div>
+			
+				<div class="question">
+					<p class="question-text">IS THERE TRANSPORTATION PROVIDED BY THE SCHOOL OR LEARNERS ARE REQUIRED TO USE THEIR OWN?</p>
+					<div class="answer">
+						<p>Sorry,the school does not provide  transportation as yet but we are working towards buying a bus or taxis for learners in far distances.</p>
+					</div>
+				</div>
+			
+				<div class="question">
+					<p class="question-text">WHAT DO I DO IF I NEED TO SEE A TEACHER?</p>
+					<div class="answer">
+						<p>Staff can be contacted via phone calls,e-mails or smses. Credentials will be provided according to your child's classes.</p>
+						<p>An appointment can be made via  the school office.</p>
+					</div>
+				</div>
+			
+				<div class="question">
+					<p class="question-text">HOW WILL MY CHILD BE ABLE TO CONTRIBUTE THEIR VIEWS?</p>
+					<div class="answer">
+						<p>We have a number of ways that children's views can be heard and listened to, including:</p>
+						<ul>
+							<li>School Counsil</li>
+							<li>Pupil Voice Interview</li>
+							<li>Class Counsil Meeting etc.</li>
+						</ul>
+						<p>Conform to the school for more information.</p>
+					</div>
+				</div>
+			</section>
 		</main>
-		<footer class="flexContainer flexCenter blueBackground whiteText height50">&copy; Mzamomtsha Primary School</footer>
+		<footer class="footer">
+			<div class="footer-item">
+				<h3 class="footer-item-heading">Contact us</h3>
+				<br> Tel : 021 2365852  </br>
+				<br>Email : mzamomtsha@gmail.com</br>			
+			</div>
+			<div class="footer-item">
+				<h3 class="footer-item-heading">Connect with us</h3>
+
+				<a class="footer-link" href="https://www.facebook.com/pages/Mzamomtsha-Primary-School/172620986728780">
+					<img border="0" src="content/images/145802.svg " width="30" height="30">
+				</a>
+		
+				<a class="footer-link" href="https://twitter.com/Twitter">
+					<img border="0" src="content/images/145812.svg " width="30" height="30">
+				</a>
+						
+			</div>
+			<div class="footer-item">
+				<h3 class="footer-item-heading">Our Location</h3>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.57901566261!2d18.6490213153675!3d-34.00334553348609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc4f10cee25b65%3A0x67a6a93df747dbac!2sMzamomtsha%20Primary!5e0!3m2!1sen!2sza!4v1589250242365!5m2!1sen!2sza" 
+				width="250" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						
+			</div>
+			<div class="footer-item">
+				<p>&copy; Mzamomtsha Primary School &middot; Designed by The Collective in Cape Town</p>
+			</div>
+		</footer>
 		<script type="text/javascript" src="content/js/main.js"></script>
+
+<script>
+var coll = document.getElementsByClassName("question-text");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    //this.classList.toggle("active");
+    var answer = this.nextElementSibling;
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+    } else {
+      answer.style.display = "block";
+    }
+  });
+}
+</script>
 	</body>
 </html>
