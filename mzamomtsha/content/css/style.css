@@ -466,7 +466,9 @@ footer{
   padding:0px;
   }
   
-  ol,ul,li
+  .staff-section ol,
+  .staff-section ul,
+  .staff-section li
   { list-style:none; 
   display:inline;
   }
@@ -991,11 +993,9 @@ transform: scale(1.5);
 
 .staff-section.flex-container > div {
   background: rgb(13,0,36);
-  border: 5px solid;
-  border-image: radial-gradient(rgb(0,143,104), rgb(250,224,66)) 1;
   border-radius:20px;
   background: linear-gradient(90deg, rgba(13,0,36,1) 0%, rgba(134,9,158,1) 0%, rgba(29,55,148,1) 0%, rgba(0,82,124,1) 63%, rgba(0,177,213,1) 100%);
-  height: auto;
+  height: 440px;
   flex-wrap: wrap;
   align-content: center;
   width: auto;
@@ -1016,6 +1016,13 @@ transform: scale(1.5);
 
 .round {
   border-radius: 5%;
+}
+
+.previous {
+  background: linear-gradient(0deg, rgba(0,43,66,1) 0%, rgba(0,14,74,1) 40%, rgba(63,27,181,1) 90%);
+  color: black;
+  text-align: left;
+  padding-left: 760px;
 }
 
 .teachers_section {
