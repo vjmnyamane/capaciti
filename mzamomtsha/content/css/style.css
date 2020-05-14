@@ -517,8 +517,29 @@ transform: scale(1.5);
   color: white;
 }
 
+a:hover {
+  background-color: linear-gradient(0deg, rgba(0,43,66,1) 0%, rgba(0,14,74,1) 40%, rgba(63,27,181,1) 90%) ;
+  color: white;
+}
+
+
+
+.next {
+  background: linear-gradient(0deg, rgba(0,43,66,1) 0%, rgba(0,14,74,1) 40%, rgba(63,27,181,1) 90%);
+  color: white;
+}
+
 .round {
   border-radius: 5%;
+  align-items:center;
+}
+
+
+.previous {
+  background: linear-gradient(0deg, rgba(0,43,66,1) 0%, rgba(0,14,74,1) 40%, rgba(63,27,181,1) 90%);
+  color: black;
+  text-align: left;
+  padding-left: 760px;
 }
 
 .teachers_section {
